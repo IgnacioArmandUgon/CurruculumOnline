@@ -15,11 +15,14 @@
          text-align: center;
          padding-top: 60px;
          padding-bottom: 60px;
-         background-color:rgb(164, 178, 255);
+         background: linear-gradient(90deg, rgb(105, 105, 255), rgb(221, 194, 255));
          border-radius: 15px;
          font-size: 40px;
 
 
+     }
+     main div {
+         padding-left: 45px;
      }
     
      main div:hover {
@@ -34,8 +37,21 @@
          justify-self: center;
         }
     .foto:hover {
-        box-shadow: 5px 10px 10px rgb(99, 99, 99);
+        animation-name: fotoZoom;
+        animation-duration: 400ms;
+        animation-fill-mode: forwards;
 
+    }
+    @keyframes fotoZoom {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.18);
+            
+        }
+
+        
     }
     li {
         font-size: 20px;
@@ -122,10 +138,10 @@
                 <p><h3>Redes sociales</h3></p>
                 <ul>
                     <li><a href="https://www.facebook.com/matias.armandugon/" target=”_blank”> Facebook </a>    </li>
-                    <li><a href="instagram.com/ignacioarmandugon/" target=”_blank”> Instagram </a>    
+                    <li><a href="https://www.instagram.com/ignacioarmandugon/" target=”_blank”> Instagram </a>    
                         <a></li>
                 </ul>
-            </div>
+            </div>  
             </main>
             <footer>
                
@@ -134,5 +150,4 @@
 
     </body>
     </html>
-
         
