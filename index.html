@@ -2,55 +2,88 @@
 <style>
      body {
           font-family: 'Roboto', sans-serif;
+         
      }
+     main {
+         display: grid;
+         grid-template-columns: 66% 33%;
+         grid-template-rows: repeat(6,auto);
+         grid-template-rows: minmax(100px, auto);
+     }
+    
      .titulo {
          text-align: center;
-         padding-top: 40px;
-         padding-bottom: 40px;
-         background-color:rgb(230, 230, 230);
+         padding-top: 60px;
+         padding-bottom: 60px;
+         background-color:rgb(164, 178, 255);
          border-radius: 15px;
+         font-size: 40px;
+
 
      }
-     .foto {
+    
+     main div:hover {
+         background-color: rgb(221, 221, 255);
          border-radius: 15px;
-         border-color: black;
+     }
+     .foto {
+         border-radius: 10px;
          width: 300px;
          height: 300px;
-         position: absolute;
-         margin-left: 1000px;
+         grid-area: 1/2/6/3;
+         justify-self: center;
         }
+    .foto:hover {
+        box-shadow: 5px 10px 10px rgb(99, 99, 99);
+
+    }
     li {
         font-size: 20px;
     }
     h3 {
         font-size: 30px;
     }
+    footer {
+        padding: 20px 0 10px 0;
+    }
+    
+   
+   
 </style>
     <head> 
-        <title> Curriculum Ignacio </title> 
+        <title> Curriculum  Ignacio </title> 
         <!-- Fuente de Google -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
     <body> 
-        <header><h1 class="titulo">Curriculum Vitae</h1></header>
-        <img class="foto" src="Foto cv.jpg" alt="Foto Curriculum Vitae">
+        <header>
+            <h1 class="titulo">Curriculum Vitae</h1>
+        </header>
+
         <main>
-            <p><h3><strong> Datos personales</strong></h3></p>
-            <ul>
-                <li>Nombre:  Matias Armand-ugon</li>
-                <li>Fecha de nacimiento: 02/05/1999</li>
-                <li>Teléfono fijo: 2227 00 62</li>
-                <li>Celular: 094 794 999</li>
-                <li>Correo: Matias4371@gmail.com</li>
-                <li>Carne de salud: Vigente</li>
-                <li>Credencial civica: Vigente</li>
-            </ul>
-        <p><h3><strong>Educacion formal</strong></h3></p>
+           
+
+        <div> 
+            <p ><h3><strong> Datos personales</strong></h3></p>
+                <ul>
+                    <li>Nombre: Ignacio Matias Armand-ugon</li>
+                   <li>Fecha de nacimiento: 02/05/1999</li>
+                  <li>Teléfono fijo: 2227 00 62</li>
+                  <li>Celular: 094 794 999</li>
+                  <li>Correo: Matias4371@gmail.com</li>
+                  <li>Carne de salud: Vigente</li>
+                  <li>Credencial civica: Vigente</li>
+                </ul>
+        </div>
+        <img class="foto" src="Foto cv.jpg" alt="Foto Curriculum Vitae">
+        <div><p><h3><strong>Educacion formal</strong></h3></p>
             <ul>
                 <li>Bachillerato diversificación arte y expresión completado
                     Liceo N°26 Líber Falco, 2017 – 2019
                     </li>
             </ul>
+        </div>
+        <div>
             <p><h3><strong>Educacion no formal</strong></h3></p>
             <ul>
                 <li>
@@ -63,14 +96,15 @@
                 <li>
                     1er año bachillerato de informática en UTU
                 </li>
-            </ul>    
-            <p><h3><strong>Experiencia laboral</strong></h3></p>
+            </ul>
+        </div>    
+          <div>  <p><h3><strong>Experiencia laboral</strong></h3></p>
             <ul>
                 <li>
                     Sin experiencia laboral
                 </li>
-            </ul>
-            <p><h3><strong>Otros conocimientos</strong></h3></p>
+            </ul></div>
+           <div><p><h3><strong>Otros conocimientos</strong></h3></p>
             <ul>
                 <li>
                     Nivel de ingles:
@@ -83,7 +117,22 @@
                 <li>
                     Manejo de computadoras basico y ofimatica a nivel usuario
                 </li>
-            </ul>
+            </ul></div> 
+            <div>
+                <p><h3>Redes sociales</h3></p>
+                <ul>
+                    <li><a href="https://www.facebook.com/matias.armandugon/" target=”_blank”> Facebook </a>    </li>
+                    <li><a href="instagram.com/ignacioarmandugon/" target=”_blank”> Instagram </a>    
+                        <a></li>
+                </ul>
+            </div>
             </main>
+            <footer>
+               
+                <div>Pagina creada por Ignacio Armand-ugón como ejercicio y aplicacion de conocimientos en lenguajes HTML5 y CSS3 </div>
+            </footer>
+
+    </body>
+    </html>
 
         
