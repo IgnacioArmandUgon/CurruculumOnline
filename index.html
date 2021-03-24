@@ -13,10 +13,14 @@
 
      }
      @media only screen and (max-width: 600px) {
-         main {
-            padding: 0 0em 4em 0em ;
+       main {
+         display: grid;
+         grid-template-columns: 66% 33%;
+         grid-template-rows: repeat(6,auto);
+         grid-template-rows: minmax(100px, auto);
+         padding: 0 0em 4em 0em ;
 
-         }
+     }
          
      }
     
