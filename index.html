@@ -11,7 +11,14 @@
          grid-template-rows: minmax(100px, auto);
          padding: 0 8em 4em 8em ;
 
-     }    
+     }
+     @media only screen and (max-width: 600px) {
+         main {
+            padding: 0 0em 4em 0em ;
+
+         }
+         
+     }
     
      .titulo {
          text-align: center;
@@ -78,7 +85,6 @@
     }
     
    
-   
 </style>
     <head> 
         <title> Curriculum  Ignacio </title> 
@@ -86,7 +92,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
     <body> 
-        <header>
+        <div id="contenedor";">
+            <header>
             <h1 class="titulo">Curriculum Vitae</h1>
         </header>
 
@@ -159,6 +166,7 @@
                
                 <div>© Ignacio Armand-ugón 2020 Pagina creada por Ignacio Armand-ugón como ejercicio y aplicacion de conocimientos en lenguajes HTML5 y CSS3 </div>
             </footer>
+        </div>
 
     </body>
     </html>
